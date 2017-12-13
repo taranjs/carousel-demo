@@ -1,0 +1,85 @@
+.main {
+    margin-bottom: 150px;
+}
+
+.carousel {
+    display: flex;
+    /* margin: 0 auto; */
+    justify-content: center;
+}
+
+.centre-image-container {
+    height: 250px;
+    width: 250px;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    /* justify-content: space-around; */
+    position: relative;
+    z-index: 10;
+}
+
+.left-image-container, .right-image-container {
+    /* width: 20px; */
+    height: 250px;
+    /* background-color: red; */
+    perspective: 150px;
+}
+
+.centre-image-container .fa {
+    padding: 95px;
+    position: absolute;
+    z-index: 99;
+}
+
+.centre-image {
+    width: 250px;
+}
+
+.left-image, .right-image {
+    height: 100px;
+    width: 100px;
+    /* background-color: green; */
+    position: relative;
+    margin: 75px 0;
+    z-index: 5;
+}
+
+.left-image {
+    left: 15px;
+    /* justify-self: auto; */
+    /* display: flex; */
+    transform: rotateY(25deg);
+}
+
+.right-image {
+    right: 15px;
+    transform: rotateY(-25deg);
+}
+
+.nav-left, .nav-right {
+    cursor: pointer;
+    height: 250px;
+    position: relative;
+}
+
+.fade {
+    opacity: .5;
+}
+
+.nav-left {
+    left: -20px;
+}
+
+.nav-right {
+    left: 20px;
+}
+
+.nav-left a, .nav-right a {
+    height: 250px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.image-title {
+    text-align: center;
+}

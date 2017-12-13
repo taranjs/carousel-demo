@@ -1,0 +1,36 @@
+<div style="text-align:center">
+  <h3>
+    Welcome to {{ title }}!
+  </h3>
+  <h5>Click the arrows or use the left/right arrow keys.</h5>
+</div>
+<div class="main">
+  <div class="carousel">
+    <div class="nav-left">
+      <a>
+        <i class="fa fa-chevron-left"></i>
+      </a>
+    </div>
+
+    <div class="left-image-container">
+      <img class="left-image" />
+    </div>
+
+    <div class="centre-image-container">
+      <i *ngIf="showSpinner" class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+      <img class="centre-image" />
+      <div class="image-title">{{imageTitle}}</div>
+    </div>
+
+    <div class="right-image-container">
+      <img class="right-image" />
+    </div>
+
+    <div class="nav-right">
+      <a>
+        <i class="fa fa-chevron-right"></i>
+      </a>
+    </div>
+
+  </div>
+</div>
